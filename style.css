@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+header {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    background: #d8dc97;
+    margin-bottom: 1rem;
+}
+
+header div {
+    margin-left: 2rem;
+}
+
+header img {
+    max-height: 15vh;
+    border-radius: 50%;
+    margin-left: 2.5vh;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: brown;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+    margin-right: 1rem;
+    border:  solid 1px #d8dc97;
+    padding: 0.5rem;
+}
+
+header a {
+    text-decoration: none;
+    color: brown;
+}
+
+header li:hover {
+    border-color: black;
+}
+
+header li:hover a {
+    color: black;
+}
+
+header form {
+    margin-right: 2rem;
+}
+
+main#accueil {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+#galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    gap: 1rem;
+    border: brown solid 2px;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+}
+
+#galerie img {
+    width: 100%;
+}
+
+#galerie img:hover {
+    z-index: 1;
+    scale: 2;
+    transition-duration: 0.5s;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    align-items: center;
+    gap: 0.5rem;  
+    border: brown solid 2px;
+    padding: 0.5rem 1rem 1rem 0.5rem;
+    margin-bottom: 0.5rem;
+    background: #d8dc97;
+}
+
+article img {
+    width: 100%;
+}
+
+footer {
+    background: #d8dc97;
+    color: brown;
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 800;
+    height: 10vh;
+}
+
+#connexion {
+    min-height: 60vh;
+}
+
+#connexion form {
+    border: solid 2px grey;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+}
+
+#connexion label {
+    width: 100%;
+    height: 1.5rem;
+}
+
+#connexion input {
+    height: 1.5rem;
+}
+
+#connexion input, #connexion textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+img {
+    filter: sepia(100%);
+    box-shadow: 5px 5px 5px grey;
+}
